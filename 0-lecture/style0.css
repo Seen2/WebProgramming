@@ -1,0 +1,38 @@
+h1{
+				color:red; 
+				text-align:center;
+			}
+div {
+	color : grey;
+	border:5px dotted blue;
+	font-family:Arial,sans-serif;
+	background-color:orange;
+	height:500px;
+	width:35%;
+	margin:30px;
+	padding:4%;
+}
+table{
+	border:5px;
+	height:50px;
+	width:35%;
+	margin:10px;
+	border-collapse:collapse;
+
+
+}
+
+
+th {
+	font-weight:bold;
+	background-color:orange;
+}
+
+td,th {
+	text-align:center;
+	border:1px solid black;
+	font-family:Arial,sans-serif;
+	margin:10px;
+	padding:4px;
+	font-size:20px;
+}
