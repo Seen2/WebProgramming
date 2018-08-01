@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="refresh" content="1" >
+		<title>My WebPage </title>
+		<style>
+			button,h1,input::before{
+				content:"My";
+				color:green;
+				background-color:red;
+			}
+		</style>
+		</head>
+	<body>
+		<h1>Heading </h1>
+		<div style="text-align:center;">
+			Name<input name="name" type="TEXT" />
+			<br/>
+			Age<input name="name" type="number" />
+			<br/>
+			Password<input name="password" type="PASSWORD" />
+			<br />
+			<button > Click here</button>
+
+		</div>
+		<div>
+			<input type="RADIO" value="red" name="color"  /> Red
+			<input type="RADIO" value="green" name="color"  /> Green
+			<input type="RADIO" value="yellow" name="color"  /> Yellow
+			<input type="RADIO" value="blue" name="color"  /> Blue
+		</div> 
+		<div>
+			<input list="countries" placeholder="country" />
+			<datalist id="countries">
+				<option value="India" />
+				<option value="America" />
+				<option value="China" />
+				<option value="Nepal" />
+			</datalist>
+
+		</div>
+
+	</body>
+</html>
+
+
