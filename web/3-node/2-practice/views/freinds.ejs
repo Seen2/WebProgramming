@@ -1,0 +1,15 @@
+<% include common/header %>
+<h1> freind Zone <h1>
+
+<% freinds.forEach((f)=> {%>
+				<li> <%= f.name %> </li>
+<%			}	); %>
+
+
+<h1> Add freind </h1>
+<form action="/addfreind" method="POST">
+<input type="text" name="newfreind" placeholder="Name" />
+<button>submit </button>
+</form>
+
+<% include common/footer %>
