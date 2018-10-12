@@ -20,8 +20,7 @@ app.get('/speak/:w',(req,res)=>{
 												
 
 				}
-}
-);
+});
 app.get('/repeat/:what/:number',(req,res)=>{
 				w=req.params.what;
 				what='';
