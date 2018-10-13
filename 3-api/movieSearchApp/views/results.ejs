@@ -1,0 +1,11 @@
+<link href="/app.css" rel="stylesheet" />
+
+<h1> Movies </h1>
+<% if(typeof data.Search== 'object') { %>
+<% (data.Search).forEach((m)=>{ %>
+				
+				<li><%= (m.Title) %></li>
+<% }); }else{ %>
+
+<h1> not found </h1>
+<% } %>
