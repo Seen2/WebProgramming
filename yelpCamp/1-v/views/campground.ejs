@@ -1,0 +1,16 @@
+<% include common/header.ejs %>
+<link href="/app.css" rel="stylesheet"  />
+<h1> camp ground </h1>
+
+<a href="/">Landing Page </a>
+
+<% data.forEach((c)=> {  %>
+<div>
+				<li> <%= c.name %> </li>
+				<br />
+				<img src="<%- c.img %>" />
+				<br />
+</div>
+<%				}); %>
+
+<% include common/footer.ejs %>
