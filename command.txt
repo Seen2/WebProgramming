@@ -1,0 +1,34 @@
+mongo --host 127.0.0.1:27017
+sudo service mongod stop
+sudo service mongod start
+sudo service mongod restart
+
+==> Mongo basic commands
+
+1:mongo
+==>if the server of mongo is started with commands above then it will let us use mongo console.
+
+2:use <db_name>
+==>switch between database.
+
+3:<db_name>.find(<match_obj[optional]>)
+==> find the matching case with argument inside default it will give entire database.
+
+4: show dbs
+==> show the db_name of storage.
+
+5: db.db_name.<db_title>.insert(<data>)
+==> after using the 2nd cmd use this to create and to insert data use it whenever you need.
+
+6: db.db_name.<db_title>.update(<{matching_data[optional]}>,{new_data})
+
+==> will override the data by using this cmd 
+
+7: db.db_name.<db_title>.update(<{matching_data[optional]}>,{$set:{new_data}})
+
+==> will not override the data by using this cmd 
+
+
+6: db.db_name.<db_title>.remove(<{matching_data[optional]}>)
+
+==> will delete all data with matching case by using this cmd 
