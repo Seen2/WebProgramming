@@ -1,16 +1,30 @@
 <% include common/header.ejs %>
 <link href="/app.css" rel="stylesheet"  />
-<h1> camp ground </h1>
+<div class="container">
 
-<a href="/">Landing Page </a>
+				<header class="jumbotron">
+								<h1> Camp ground </h1>
+								<p>
+												this is camp from all around world.
 
-<% data.forEach((c)=> {  %>
-<div>
-				<li> <%= c.name %> </li>
-				<br />
-				<img src="<%- c.img %>" />
-				<br />
+								</p>
+								<p>
+												<a href="/" class="btn btn-primary btn-large">Landing Page </a>
+								</p>
+				</header>
+				<div class="row">
+								
+								<% data.forEach((c)=> {  %>
+								<div class="col-md-3 col-sm-6">
+												<div class="thumbnail">
+																<img height=200 width=200 src="<%= c.img %>" />
+												</div>
+												<div class="caption">
+																<h4> <%= c.name %> </h4>
+												</div>
+								</div>
+																<%				}); %>
+				</div>
+
 </div>
-<%				}); %>
-
 <% include common/footer.ejs %>
