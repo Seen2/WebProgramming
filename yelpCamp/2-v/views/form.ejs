@@ -1,0 +1,21 @@
+<% include common/header.ejs %>
+
+<link href="/app.css" rel="stylesheet"  />
+<h1> Camp Form </h1>
+<h2> Fill the Form </h2>
+
+<form action="/camp" method="POST">
+				<br/>
+				<p>
+				<input type="text" placeholder="Camp Name" name="name" />
+				<br/>
+				</p>
+				<p>
+				<input type="text" placeholder="Image Source" name="img" />
+				<br/>
+				</p>
+				<input type="submit"/>
+				<br/>
+</form>
+
+<% include common/footer.ejs %>
