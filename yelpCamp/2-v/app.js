@@ -14,7 +14,8 @@ mongoose.connect("mongodb://localhost:27017/yelpCamp", { useNewUrlParser: true }
 var YelpCampSchema=new mongoose.Schema(
 				{
 								name:String,
-								img:String
+								img:String,
+								des:String,
 				}
 );
 
@@ -36,7 +37,7 @@ app.get("/camp",(req,res)=>{
 								if(err){
 												console.log("something went wrong");
 								}else{
-												res.render('campground',{data});
+												res.render('index',{data});
 								}
 				});
 								
@@ -45,6 +46,7 @@ app.get("/camp",(req,res)=>{
 app.post("/camp",(req,res)=>{
 
 				let newCamp=req.body;
+				console.log(newCamp);
 				//data.push(newCamp);
 				//saving data to data base
 
@@ -62,7 +64,7 @@ app.post("/camp",(req,res)=>{
 												console.log(err);
 								}
 								else{
-												res.render('campground',{data});
+												res.render('index',{data});
 								}
 				});
 				
@@ -70,6 +72,20 @@ app.post("/camp",(req,res)=>{
 
 app.get("/camp/new",(req,res)=>{
 				res.render('form');
+});
+
+app.get("/camp/:id",(req,res)=>{
+				
+				camp.findById({_id:req.params.id},(err,campInfo)=>{
+								if(err){
+												console.log("something went wrong with id");
+												res.send("<h1>something went rong...!</h1>");
+								}
+								else{
+												res.render('show',{campInfo});
+
+								}
+				});
 });
 
 app.get("/*",(req,res)=>{
