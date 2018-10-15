@@ -1,0 +1,31 @@
+<% include common/header.ejs %>
+<link href="/app.css" rel="stylesheet"  />
+<div class="container">
+
+				<header class="jumbotron">
+								<h1> Camp ground </h1>
+								<p>
+												this is camp from all around world.
+
+								</p>
+								<p>
+												<a href="/" class="btn btn-primary btn-large">Landing Page </a>
+								</p>
+				</header>
+				<div class="row">
+								
+								<% data.forEach((c)=> {  %>
+								<div class="col-md-3 col-sm-6">
+												<div class="thumbnail">
+																<img height=200 width=200 src="<%= c.img %>" />
+												</div>
+												<div class="caption">
+																<h4> <%= c.name %> </h4>
+																<a  href="/camp/<%= c.id %>">View info</a>
+												</div>
+								</div>
+																<%				}); %>
+				</div>
+
+</div>
+<% include common/footer.ejs %>
