@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<title> click </title>
+				</head>
+				<body >
+								<p class="colorChange" >text 1</p>
+								<p class="colorChange" >text 2</p>
+								<p class="colorChange" >text 3</p>
+								<p class="colorChange" >text 4 </p>
+								<p class="colorChange" >text 5 </p>
+								<script> 
+												let rows=document.getElementsByClassName("colorChange")
+												for(let i=0;i<rows.length;i++){
+																(i%2==0)?rows[i].style.color='red':rows[i].style.color='blue';
+												}
+								</script>
+				</body>
+</html>
+
+
