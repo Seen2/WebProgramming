@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<title> click </title>
+				</head>
+				<body >
+								<p id="colorChange" >text 1</p>
+								<script> 
+												let view=document.getElementById("colorChange")
+												view.addEventListener("mouseover",()=>{
+																view.style.color='red';
+																view.addEventListener('mouseout',()=>{
+																				view.style.color='black';
+																})
+												});
+								</script>
+				</body>
+</html>
+
+
