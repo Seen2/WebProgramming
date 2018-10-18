@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<script type="text/javascript" src="jquery-3.3.1.js">
+								</script>
+								<title> click </title>
+				</head>
+				<body >
+								<p class="colorChange" >text 1</p>
+								<p class="colorChange" >text 2</p>
+								<p class="colorChange" >text 3</p>
+								<p class="colorChange" >text 4 </p>
+								<p class="colorChange" >text 5 </p>
+								<script> 
+												let rows=$(".colorChange")
+												for(let i=0;i<rows.length;i++){
+																(i%2==0)?rows[i].style.color='red':rows[i].style.color='blue';
+												}
+								</script>
+				</body>
+</html>
+
+
