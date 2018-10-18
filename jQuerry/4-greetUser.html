@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<script type="text/javascript" src="jquery-3.3.1.js">
+								</script>
+								<title id="user">  </title>
+				</head>
+				<body >
+								<input id="input" placeholder="Enter your name" />
+								<script>
+												let input=$('#input');
+												input.keyup((entered)=>{
+																if(entered.keyCode==13){
+																				alert(`hello ${input.val()}!`);
+																				$('#user').html(` ${input.val()}`);
+																}
+												})
+
+								</script>
+				</body>
+</html>
+
+
