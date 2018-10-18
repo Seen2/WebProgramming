@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<title> click </title>
+				</head>
+				<body >
+								<button id="clickButton" >click</button>
+								<script> 
+												let i=0
+												let view=document.getElementById("clickButton")
+												view.addEventListener("click",()=>{
+																i++;
+																if (i==1){
+																				alert('you clicked me once!');
+
+																}
+																else{
+																				alert(`you clicked me ${i} times!`);
+																}
+												});
+								</script>
+				</body>
+</html>
+
+
