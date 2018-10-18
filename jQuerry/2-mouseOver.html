@@ -2,15 +2,17 @@
 <html>
 				<head>
 								<title> click </title>
+								<script type="text/javascript" src="jquery-3.3.1.js">
+								</script>
 				</head>
 				<body >
 								<p id="colorChange" >text 1</p>
 								<script> 
-												let view=document.getElementById("colorChange")
-												view.addEventListener("mouseover",()=>{
-																view.style.color='red';
-																view.addEventListener('mouseout',()=>{
-																				view.style.color='black';
+												let view=$("#colorChange")
+												mouseover.(()=>{
+																view.css("color",'red');
+																view.mouseout(()=>{
+																				view.css("color",'black');
 																})
 												});
 								</script>
