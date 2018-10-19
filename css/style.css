@@ -1,0 +1,43 @@
+body{
+				background-image:url(https://css-tricks.com/wp-content/uploads/2017/09/radial-gradient.png);
+				text-align:center;
+}
+
+p::selection {
+				color:rgba(0,255,0,0.2);
+				background-color:white;
+
+			}
+a{
+				color:rgba(11,11,255,0.5);
+				font-size:200%;
+				border-bottom:3px solid #bec6d3;
+}
+
+p{
+				font-family:fantasy;
+				font-size:20px;
+				border:2px solid orange;
+				text-align:center;
+				padding:10px;
+				margin:10px;
+				
+}
+div >p{
+				border-bottom:0px;
+}
+p span{
+				font-size:3em;
+}
+.box{
+				border:2px solid red;
+				font-family:fantasy;
+				font-size:20px;
+				margin:10px;
+				text-align:center;
+				padding:10px;
+}
+#box:hover{
+				border:1px solid green;
+				padding:10px;
+}
