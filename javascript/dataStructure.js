@@ -10,8 +10,9 @@ var arrMethods=()=>{
 				console.log("after pop:"+arr);
 				arr.push(()=>console.log(9))
 				console.log("after push:"+arr);
-				arr.unshift("s");
+				arr.unshift("a");
 				console.log("after unshift:"+arr);
+				console.log(arr.sort());
 
 }
 
