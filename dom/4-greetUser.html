@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+				<head>
+								<title id="user">  </title>
+				</head>
+				<body >
+								<input id="input" placeholder="Enter your name" />
+								<script>
+												let input=document.getElementById('input');
+												input.addEventListener('keyup',(enered)=>{
+																if(enered.keyCode==13){
+																				alert(`hello ${input.value}!`);
+																				document.getElementById('user').innerHTML=` ${input.value}`
+																}
+												})
+
+								</script>
+				</body>
+</html>
+
+
