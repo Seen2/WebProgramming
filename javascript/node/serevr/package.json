@@ -1,0 +1,14 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "\"first server\"",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon"
+  },
+  "author": "\"shintu\"",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.18.5"
+  }
+}
